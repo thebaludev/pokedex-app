@@ -1,10 +1,12 @@
 import { createWebHistory, createRouter } from 'vue-router'
 
 import WelcomeView from '../views/WelcomeView.vue'
+import LoadingView from '../views/LoadingView.vue'
 import PokemonView from '../views/PokemonView.vue'
 
 const routes = [
   { path: '/', component: WelcomeView },
+  { path: '/loading', component: LoadingView },
   { path: '/pokedex', component: PokemonView }
 ]
 
