@@ -1,5 +1,27 @@
+<script setup lang="ts">
+import { useRouter } from 'vue-router'
+import BaseButton from '../components/BaseButton.vue'
+
+const router = useRouter()
+
+const getStarted = () => {
+  router.push('/loading')
+}
+</script>
+
 <template>
-  <section>
-    <h1>Welcome to Pokédex</h1>
+  <section class="grid place-items-center min-h-screen">
+    <div class="grid justify-items-center gap-14">
+      <img src="../assets/pikachu.svg" alt="Pikachu greeting">
+
+      <div class="grid justify-items-center gap-8">
+        <h1 class="font-bold text-2xl text-poke-gray-900">Welcome to Pokédex</h1>
+        <p class="font-medium text-lg text-poke-gray-700 text-center">The digital encyclopedia created by Professor Oak
+          is
+          an invaluable tool <br> to Trainers in the Pokémon world.</p>
+      </div>
+
+      <BaseButton @click="getStarted" content="Get started" />
+    </div>
   </section>
 </template>
