@@ -3,6 +3,18 @@
 
 @theme {
   --font-lato: "Lato", sans-serif;
+
+  --color-poke-yellow: #ECA539;
+  --color-poke-red-dark: #C00E20;
+  --color-poke-red: #F22539;
+
+  --color-poke-gray-900: #353535;
+  --color-poke-gray-700: #5E5E5E;
+  --color-poke-gray-400: #BFBFBF;
+
+  --color-poke-gray-200: #E8E8E8;
+  --color-poke-gray-100: #F5F5F5;
+  --color-poke-white: #F9F9F9;
 }
 
 body {
