@@ -7,7 +7,7 @@ const router = useRouter()
 onMounted(() => {
   setTimeout(() => {
     router.push('/pokedex')
-  }, 1200)
+  }, 1500)
 })
 </script>
 
