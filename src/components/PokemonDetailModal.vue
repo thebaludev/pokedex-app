@@ -29,9 +29,7 @@ const sharePokemon = async () => {
   const pokemonInfo = getShareText.value
 
   try {
-    await navigator.clipboard.writeText(pokemonInfo)
-    console.log('Texto copiado');
-    
+    await navigator.clipboard.writeText(pokemonInfo)    
   } catch (error) {
     console.log('Error copiando', error)
     
