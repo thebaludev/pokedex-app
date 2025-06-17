@@ -6,7 +6,7 @@ import PokemonDetailModal from './PokemonDetailModal.vue'
 import { usePokemonStore } from '../store/pokemonStore'
 import { useFavoritesStore } from '../store/favoritesStore'
 import { getPokemonDetail } from '../services/pokemonService'
-import type { PokemonDetail } from '../types/pokemon'
+import type { PokemonBasic, PokemonDetail } from '../types/pokemon'
 
 const store = usePokemonStore()
 const favoriteStore = useFavoritesStore()
@@ -22,7 +22,7 @@ const filteredFavoriteList = computed(() => {
   return favoriteList.value.filter(pokemon => pokemon.name.toLocaleLowerCase().includes(search.value.toLocaleLowerCase()))
 })
 
-async function openDetail(pokemon) {
+async function openDetail(pokemon: PokemonBasic) {
   try {
     const detail = await getPokemonDetail(pokemon.url)
     selectedPokemon.value = detail

@@ -6,7 +6,7 @@ import NotFoundSection from '../components/NotFoundSection.vue'
 import PokemonDetailModal from './PokemonDetailModal.vue'
 import { getPokemonDetail } from '../services/pokemonService'
 import { usePokemonStore } from '../store/pokemonStore'
-import type { PokemonDetail } from '../types/pokemon'
+import type { PokemonBasic, PokemonDetail } from '../types/pokemon'
 
 const store = usePokemonStore()
 const search: Ref<string> = ref('')
@@ -21,7 +21,7 @@ const filteredList = computed(() => {
   )
 })
 
-async function openDetail(pokemon) {
+async function openDetail(pokemon: PokemonBasic) {
   const detail = await getPokemonDetail(pokemon.url)
   selectedPokemon.value = detail
   showModal.value = true

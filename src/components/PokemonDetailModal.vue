@@ -21,10 +21,6 @@ const pokemonTypes = computed<string>(() => {
   return props.pokemon.types.map(type => type.type.name).join(', ')
 })
 
-const capitalize = (text: string) => {
-  return text.charAt(0).toUpperCase() + text.slice(1)
-}
-
 const getShareText = computed(() => {
   return `${pokemonName.value}, Weight: ${props.pokemon.weight}, Height: ${props.pokemon.height}, Types: ${pokemonTypes.value}`
 })
