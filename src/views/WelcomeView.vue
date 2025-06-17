@@ -1,12 +1,5 @@
 <script setup lang="ts">
-import { useRouter } from 'vue-router'
-import BaseButton from '../components/BaseButton.vue'
-
-const router = useRouter()
-
-const getStarted = () => {
-  router.push('/loading')
-}
+import BaseLinkButton from '../components/BaseLinkButton.vue'
 </script>
 
 <template>
@@ -21,7 +14,7 @@ const getStarted = () => {
           an invaluable tool <br> to Trainers in the Pokémon world.</p>
       </div>
 
-      <BaseButton @click="getStarted" content="Get started" />
+      <BaseLinkButton to="/loading" :active="$route.path === '/'">Get started</BaseLinkButton>
     </div>
   </section>
 </template>
