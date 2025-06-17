@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import { computed } from 'vue';
 import FavoriteButton from './FavoriteButton.vue';
-import { PokemonBasic } from '../types/pokemon';
+import type { PokemonBasic } from '../types/pokemon';
 
 const props = defineProps<{ pokemon: PokemonBasic }>()
 

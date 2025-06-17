@@ -6,7 +6,7 @@ import PokemonDetailModal from './PokemonDetailModal.vue'
 import { usePokemonStore } from '../store/pokemonStore'
 import { useFavoritesStore } from '../store/favoritesStore'
 import { getPokemonDetail } from '../services/pokemonService'
-import { PokemonDetail } from '../types/pokemon'
+import type { PokemonDetail } from '../types/pokemon'
 
 const store = usePokemonStore()
 const favoriteStore = useFavoritesStore()

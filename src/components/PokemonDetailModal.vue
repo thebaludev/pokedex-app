@@ -3,7 +3,7 @@ import { computed } from 'vue'
 import BaseButton from './BaseButton.vue'
 import FavoriteButton from './FavoriteButton.vue'
 import CloseIcon from './CloseIcon.vue'
-import { PokemonDetail } from '../types/pokemon'
+import type { PokemonDetail } from '../types/pokemon'
 
 const props = defineProps<{ pokemon: PokemonDetail }>()
 
