@@ -3,6 +3,10 @@
 Esta es una aplicación desarrollada como parte de la prueba técnica para el rol de Frontend developer en Global66.
 Permite visualizar una lista de Pokémon, buscar por nombre, ver sus detalles, marcar favoritos y compartirlos.
 
+## 🔗 Enlace a la APP desplegada en Netlify
+
+[Pokédex APP](https://app-pokedex-vue.netlify.app/)
+
 ## :brain: Pensamiento detrás de la solución
 
 Aunque la aplicación es sencilla a nivel funcional asumí que debía escalar bien en los siguientes puntos:
