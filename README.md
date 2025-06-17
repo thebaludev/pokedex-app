@@ -1,6 +1,6 @@
 # Pokédex APP
 
-Esta es una aplicación desarrolada como parte de la prueba técnica para el rol de Fronend developer en Global66.
+Esta es una aplicación desarrollada como parte de la prueba técnica para el rol de Frontend developer en Global66.
 Permite visualizar una lista de Pokémon, buscar por nombre, ver sus detalles, marcar favoritos y compartirlos.
 
 ## :brain: Pensamiento detrás de la solución
