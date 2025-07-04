@@ -1,6 +1,5 @@
 # Pokédex APP
 
-Esta es una aplicación desarrollada como parte de la prueba técnica para el rol de Frontend developer en Global66.
 Permite visualizar una lista de Pokémon, buscar por nombre, ver sus detalles, marcar favoritos y compartirlos.
 
 ## 🔗 Enlace a la APP desplegada en Netlify
